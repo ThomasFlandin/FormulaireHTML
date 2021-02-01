@@ -9,35 +9,35 @@
 
     <body>
         <h1>Inscription</h1>
-        <form name="formulaireInscription" method="POST" action="">
+        <form name="formulaireInscription" method="POST" action="form.html">
             <label for="nom">
                 Nom
-                <input type="text" id="nom" name="nom">
+                <input type="text" id="nom" name="nom" pattern="[A-Za-z]+" required>
             </label>
             <hr>
             <label for="prenom">
                 Prénom
-                <input type="text" id="prenom" name="prenom">
+                <input type="text" id="prenom" name="prenom" pattern="[A-Za-z]+" required>
             </label>
             <hr>
             <label for="dateNaissance">
                 Date de naissance
-                <input type="date" id="dateNaissance" name="dateNaissance">
+                <input type="date" id="dateNaissance" name="dateNaissance" required>
             </label>
             <hr>
-            <label for="sexe" class="labelPays">
-                <input type="radio" id="sexe" name="sexe" value="Homme">
+            <label class="labelPays">
+                <input type="radio" name="sexe" value="Homme" required>
                 Homme
             </label>
 
-            <label for="sexe" class="labelPays">
-                <input type="radio" id="sexe" name="sexe" value="Femme">
+            <label class="labelPays">
+                <input type="radio" name="sexe" value="Femme" required>
                 Femme
             </label>
 
             <label for="pays">
                 Pays
-                <select name="pays" id="pays">
+                <select name="pays" id="pays" required>
                     <option value="" disabled selected hidden>Choisissez...</option>
                     <option value="France">France</option>
                     <option value="Allemagne">Allemagne</option>
@@ -48,6 +48,25 @@
                 </select>
             </label>
             <hr>
+
+            <label for="email">
+                Courriel
+                <input type="email" name="email" id="email" required> 
+            </label>
+
+            <hr>
+
+            <label for="motDePasse">
+                Mot de passe
+                <input type="password" name="motDePasse" id="motDePasse" pattern="^[a-zA-Z]{1,}[@#%]{1}[a-zA-Z]+[1-9]{1}[0-9]{3,}" required> 
+            </label>
+
+            <hr>
+
+            <label for="photo">
+                Photo
+                <input type="file" name="photo" id="photo" accept="image/jpeg, image/png" required> 
+            </label>
             <button type="submit">Envoyer</button>
             <button type="reset">Effacer</button>
         </form>
