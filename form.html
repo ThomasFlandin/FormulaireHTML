@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 20</title>
+
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+
+    <body>
+        <h1>Inscription</h1>
+        <form name="formulaireInscription" method="POST" action="">
+            <label for="nom">
+                Nom
+                <input type="text" id="nom" name="nom">
+            </label>
+            <hr>
+            <label for="prenom">
+                Prénom
+                <input type="text" id="prenom" name="prenom">
+            </label>
+            <hr>
+            <label for="dateNaissance">
+                Date de naissance
+                <input type="date" id="dateNaissance" name="dateNaissance">
+            </label>
+            <hr>
+            <label for="sexe" class="labelPays">
+                <input type="radio" id="sexe" name="sexe" value="Homme">
+                Homme
+            </label>
+
+            <label for="sexe" class="labelPays">
+                <input type="radio" id="sexe" name="sexe" value="Femme">
+                Femme
+            </label>
+
+            <label for="pays">
+                Pays
+                <select name="pays" id="pays">
+                    <option value="" disabled selected hidden>Choisissez...</option>
+                    <option value="France">France</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Belgique">Belgique</option>
+                </select>
+            </label>
+            <hr>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </form>
+    </body>
+</html>
