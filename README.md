@@ -3,11 +3,13 @@ Programmation Web
 Exo 20 et 21
 <br />
 <br />
-pour utiliser git:
+<br />
+Pour utiliser git:
 <br />
 <br />
 #permet de dire : "je suis pret à faire un commit et ce fichier doit en faire parti"<br />
 git add -A
+<br />
 <br />
 #Créer le commit<br />
 git commit -m "message"                 
