@@ -9,7 +9,7 @@
 
     <body>
         <h1>Inscription</h1>
-        <form name="formulaireInscription" method="POST" action="">
+        <form name="formulaireInscription" method="POST" action="form.html">
             <label for="nom">
                 Nom
                 <input type="text" id="nom" name="nom" pattern="[A-Za-z]+" required>
@@ -25,13 +25,13 @@
                 <input type="date" id="dateNaissance" name="dateNaissance" required>
             </label>
             <hr>
-            <label for="sexe" class="labelPays">
-                <input type="radio" id="sexe" name="sexe" value="Homme" required>
+            <label class="labelPays">
+                <input type="radio" name="sexe" value="Homme" required>
                 Homme
             </label>
 
-            <label for="sexe" class="labelPays">
-                <input type="radio" id="sexe" name="sexe" value="Femme" required>
+            <label class="labelPays">
+                <input type="radio" name="sexe" value="Femme" required>
                 Femme
             </label>
 
