@@ -21,3 +21,5 @@ git push
 <br />
 #Permet de créer une nouvelle branche <br />
 git checkout -b exercice_21
+
+
